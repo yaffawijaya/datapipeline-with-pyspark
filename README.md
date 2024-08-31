@@ -50,10 +50,10 @@ spark-submit --master local[*] --deploy-mode client --num-executors 5 --executor
 ```
 
 Explanation of Parameters
---master local[*]: Runs Spark locally with as many worker threads as logical cores on your machine.
---deploy-mode client: Runs the Spark driver program on the client machine.
---num-executors 5: Number of executor instances.
---executor-memory 4g: Amount of memory per executor.
---executor-cores 2: Number of cores per executor.
---conf spark.sql.shuffle.partitions=200: Number of partitions to use when shuffling data for joins or aggregations.
---conf spark.pyspark.python=C:\Users\yaffa\Anaconda3\envs\spark\python.exe: Path to the Python executable to use for PySpark.
+1. **--master local[*]**: Runs Spark locally with as many worker threads as logical cores on your machine.
+2. **--deploy-mode client**: Runs the Spark driver program on the client machine.
+3. **--num-executors 5**: Number of executor instances.
+4. **--executor-memory 4g**: Amount of memory per executor.
+5. **--executor-cores 2**: Number of cores per executor.
+6. **--conf spark.sql.shuffle.partitions=200**: Number of partitions to use when shuffling data for joins or aggregations.
+7. **--conf spark.pyspark.python**=C:\Users\<username>\Anaconda3\envs\spark\python.exe: Path to the Python executable to use for PySpark.
