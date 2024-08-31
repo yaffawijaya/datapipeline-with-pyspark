@@ -43,8 +43,7 @@ To set this variable permanently:
 ### 3. Running the Pipeline
 To run the Spark job, use the spark-submit command. Make sure to replace data_pipeline.py with the path to your script if it's located elsewhere.
 
-bash
-Copy code
+Run this command:
 ```powershell
 spark-submit --master local[*] --deploy-mode client --num-executors 5 --executor-memory 4g --executor-cores 2 --conf spark.sql.shuffle.partitions=200 --conf spark.pyspark.python=C:\Users\yaffa\Anaconda3\envs\spark\python.exe data_pipeline.py
 ```
