@@ -32,13 +32,13 @@ set PYSPARK_PYTHON=C:\Users\<username>\Anaconda3\envs\spark\python.exe
 ```
 To set this variable permanently:
 
-Right-click on 'This PC' or 'Computer' on the desktop or File Explorer.
-Select 'Properties'.
-Click on 'Advanced system settings'.
-Click the 'Environment Variables' button.
-Add a new user or system variable with the following details:
-Variable name: PYSPARK_PYTHON
-Variable value: C:\Users\<username>\Anaconda3\envs\spark\python.exe
+- Right-click on 'This PC' or 'Computer' on the desktop or File Explorer.
+- Select 'Properties'.
+- Click on 'Advanced system settings'.
+- Click the 'Environment Variables' button.
+- Add a new user or system variable with the following details:
+- Variable name: PYSPARK_PYTHON
+- Variable value: C:\Users\<username>\Anaconda3\envs\spark\python.exe
 
 ### 3. Running the Pipeline
 To run the Spark job, use the spark-submit command. Make sure to replace data_pipeline.py with the path to your script if it's located elsewhere.
